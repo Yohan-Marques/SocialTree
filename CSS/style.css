@@ -1,0 +1,102 @@
+:root {
+    --body-bg-color: #6cb6c2;
+    --purple: #67afba;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style: none;
+  }
+  body{
+    font-family: "Poppins";
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#4b5f52, #2f5359, #3ba8aa, #46919e  );
+    animation: colors 10s ease infinite;
+    background-size: 200% 200%;
+    
+  }
+  @keyframes colors{
+    0%{
+      background-position: 0% 50%;
+    }
+
+    50%{
+      background-position: 100% 50%;
+    }
+
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+   
+  }
+  .one img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 30px;
+    border: 1px solid #ffffff;
+    padding: 2px;
+    filter: drop-shadow(1px 1px 5px white);
+   
+  }
+  .one p{
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  li{
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 120px;
+    margin-bottom: 17px;
+    color: #ffffffb0;
+    transition:  .3s ease-out;
+    border: 2px solid #ffffffb0;
+   
+  }
+  li:hover{
+    transition:  .3s ease-out;
+    box-shadow: inset 0 0 0 40px #ffffff;
+    border:2px solid transparent;
+    color: black;
+  }
+  li a{
+    border: 2px solid white;
+  }
+  .icons img{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 3px;
+    filter:brightness(10);
+    transition: .3s ease-in-out;
+  }
+  .icons img:hover{
+    box-shadow: 0px 0px 7px 1px white;
+    border-radius: 20%;
+  }
+  figure .pass{
+    margin-left: 5px;
+  }
+
+  .icons figure{
+    text-align: center;
+  }
+  
